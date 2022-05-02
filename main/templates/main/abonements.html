@@ -1,0 +1,78 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Абонементы{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+{%with img_first_screen="../../static/img/src/inner-first-screen.jpg"  breadcrumbs_item="Абонементы" first_screen_heading="Абонементная система" first_screen_lead="Выберете подходящую систему тренировок, чтобы получить классный результат. Если нужно, наши менеджеры подберут для вас лучший вариант в тренере для занятий."%}
+{%include 'parts/inner-page/inner-first-screen.html'%}
+{%endwith %}
+{%include 'parts/abonements/buy-form.html'%}
+{%include 'parts/abonements/consultation-form.html'%}
+
+<section class="subscription">
+
+    <div class="container">
+        <h2 class="visually-hidden">Виды абонементов</h2>
+
+        <div class="subscription__item">
+
+            <div class="row align-items-center">
+                <div class="col-xl-5 ">
+                    {%for m in sub_item_1%}
+                    {%include 'parts/abonements/subscription-item.html'%}
+                    {%endfor%}
+                </div>
+
+
+                <div class="col-xl-4 offset-xl-1">
+                    <div class="subscription__img-wrapper">
+                        <img src="{%static 'img/src/begin.jpg'%}" alt="" class=" subscription__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="subscription__item">
+
+            <div class="row align-items-center ">
+
+                <div class="order-xl-0 order-1 col-xl-4 offset-xl-1">
+                    <div class="subscription__img-wrapper">
+                        <img src="{%static 'img/src/lover.jpg'%}" alt="" class="subscription__img">
+                    </div>
+                </div>
+
+                <div class="order-xl-1 order-0 col-xl-5 offset-xl-2 offset-xl-1">
+                    {%for m in sub_item_2%}
+                    {%include 'parts/abonements/subscription-item.html'%}
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="subscription__item">
+
+            <div class="row align-items-center">
+                <div class="col-xl-5 ">
+                    {%for m in sub_item_3%}
+                    {%include 'parts/abonements/subscription-item.html'%}
+                    {%endfor%}
+                </div>
+
+
+                <div class="col-xl-4 offset-xl-1">
+                    <div class="subscription__img-wrapper">
+                        <img src="{%static 'img/src/professional.jpg'%}" alt="" class="subscription__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+{%endblock%}

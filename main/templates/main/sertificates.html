@@ -1,0 +1,40 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Сертификаты{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+
+{%with img_first_screen="../../static/img/src/inner-first-screen.jpg"  breadcrumbs_item="Сертификаты" first_screen_heading="Сертификаты на работу" first_screen_lead="Мы осуществляем тренировочную деятельность прозрачно со всех точек зрения. Все разрешения и сертификаты соответствия находятся в общем доступе."%}
+{%include 'parts/inner-page/inner-first-screen.html'%}
+{%endwith%}
+<section class="sertificates">
+    <div class="container">
+
+        <div class="sertificates__row">
+            <h2 class="sertificates__heading">Санитарные сертификаты</h2>
+            <div class="row justify-content-center">
+                {%with sertificates_img='../../static/img/sertificates/sertificate-1.jpg' sertificates_title='Разрешение на ведение деятельности'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+                {%with sertificates_img='../../static/img/sertificates/sertificate-2.jpg' sertificates_title='Санитарное разрешение на деятельность'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+                {%with sertificates_img='../../static/img/sertificates/sertificate-3.jpg' sertificates_title='Сертификат соответствия деятельности'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+            </div>
+        </div>
+
+
+        <div class="sertificates__row">
+            <h2 class="sertificates__heading">Сертификаты о видах деятельности</h2>
+            <div class="row justify-content-center">
+                {%with sertificates_img='../../static/img/sertificates/sertificate-4.jpg' sertificates_title='Разрешение на ведение деятельности'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+                {%with sertificates_img='../../static/img/sertificates/sertificate-5.jpg' sertificates_title='Санитарное разрешение на деятельность'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+                {%with sertificates_img='../../static/img/sertificates/sertificate-6.jpg' sertificates_title='Сертификат соответствия деятельности'%}
+                {%include 'parts/sertificates/sertificates-item.html'%}{%endwith%}
+            </div>
+        </div>
+
+    </div>
+</section>
+{%endblock%}

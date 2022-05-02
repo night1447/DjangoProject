@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{%block title%}{%endblock%}</title>
+    <meta charset="UTF-8">
+    <link href="{%static 'css/swiper-bundle.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link property="og:image" href="{%static 'img/src/preview.jpg'%}">
+    <link rel="shortcut icon" href="{%static 'img/icons.png'%}">
+
+</head>
+<body>
+<div class="preloader">
+    <div class="preloader__wrapper">
+        <img src="{%static 'img/src/Logo_preview.svg'%}" alt="" class="logo preloader__logo">
+        <div class="preloader__progress-bar"></div>
+    </div>
+</div>
+{%include 'parts/messages.html'%}
+{%block content%}
+
+{%endblock%}
+{%include 'parts/main-footer.html'%}
+{%include 'parts/footer.html'%}
+</body>
+</html>

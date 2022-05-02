@@ -1,0 +1,10 @@
+
+<ul class="main-menu">
+
+    {%for m in menu%}
+    <li class="main-menu__item">
+        <a href="{% url m.url_name%}" class="main-menu__link">{{m.title}}</a>
+    </li>
+    {%endfor%}
+
+</ul>

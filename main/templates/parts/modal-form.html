@@ -1,0 +1,32 @@
+<div class="modal-form__wrapper ">
+	<section class="modal-form">
+		 <button aria-label="Закрыть всплывающее окно" class="jsModalClose modal-form__close">
+			  Закрыть всплывающее окно
+		 </button>
+		 <h2 class="visually-hidden">Форма обратной связи</h2>
+		 <p class="modal-form__heading">
+			  Чтобы наш менеджер связался с вами для обсуждения ваших вопросов, заполните форму.
+		 </p>
+		 <form method="post">
+			  {% csrf_token %}
+			  <div class="form__inner-wrapper">
+					<label class="form__label">
+						 Имя*
+						 {{form.name}}
+					</label>
+					<label class="form__label">
+						 Телефон*
+						 {{form.phone}}
+					</label>
+			  </div>
+			  <label class="form__label">
+					Пожелания для тренировок*
+					{{form.message}}
+
+			  </label>
+			  <div class="form__button-wrapper">
+					<button class="modal-form__button">Отправить форму</button>
+			  </div>
+		 </form>
+	</section>
+</div>

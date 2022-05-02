@@ -1,0 +1,105 @@
+{%load static%}
+<!-- Swiper -->
+<div class="swiper firstScreenSwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <section class="first-screen">
+                <img class="first-screen__image" src="{% static 'img/src/fs-bg1.jpg'%}" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="first-screen__inner-wrapper">
+                            <h1 class="first-screen__heading">
+                                Фитнес клуб SportRing
+                            </h1>
+                            <ul class="first-screen__list">
+                                <li class="first-screen__item">
+                                    Самая современнная система очистки бассейна
+                                </li>
+                                <li class="first-screen__item">
+                                    Качественный состав тренеров с опытом более 10 лет
+                                </li>
+                                <li class="first-screen__item">
+                                    6 залов, 2 бани, 2 зала для йоги, 6 бассейнов
+                                </li>
+                            </ul>
+
+                            <a href="#water">
+                                {%with button__button="Подробнее" button_button__class="first-screen__button button-slide_1"%}
+                                {%include 'parts/button.html'%}
+                                {%endwith%}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="swiper-slide">
+            <section class="first-screen">
+                <img class="first-screen__image" src="{%static 'img/src/fs-bg2.jpg'%}" alt="">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="first-screen__inner-wrapper">
+                            <h1 class="first-screen__heading">
+                                Фитнес клуб SportRing
+                            </h1>
+                            <ul class="first-screen__list">
+                                <li class="first-screen__item">
+                                    Современная косметика
+                                </li>
+                                <li class="first-screen__item">
+                                    Доктора с опытом более 10 лет
+                                </li>
+                                <li class="first-screen__item">
+                                    Приятная атмосфера, которая передастся вам
+                                </li>
+                            </ul>
+                            <a href="#beautiful">
+                            {%with button__button="Подробнее" button_button__class="first-screen__button button-slide_2"%}
+                            {%include 'parts/button.html'%}
+                            {%endwith%}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="swiper-slide">
+            <section class="first-screen">
+                <img class="first-screen__image" src="{%static 'img/src/fs-bg3.jpg'%}" alt="">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="first-screen__inner-wrapper">
+                            <h1 class="first-screen__heading">
+                                Фитнес клуб SportRing
+                            </h1>
+                            <ul class="first-screen__list">
+                                <li class="first-screen__item">
+                                    Большой опыт в обучении единоборствами
+                                </li>
+                                <li class="first-screen__item">
+                                    Несколько залов для разных видов единоборств
+                                </li>
+                                <li class="first-screen__item">
+                                    Большая душевая комната, раздевалка и многое другое
+                                </li>
+                            </ul>
+                            <a href="#combat">
+                            {%with button__button="Подробнее" button_button__class="first-screen__button button-slide_3"%}
+                            {%include 'parts/button.html'%}
+                            {%endwith%}
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+</div>

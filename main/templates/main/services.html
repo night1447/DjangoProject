@@ -1,0 +1,168 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Услуги{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+
+{%with img_first_screen="../../static/img/src/inner-first-screen.jpg"  breadcrumbs_item="Услуги" first_screen_heading="Услуги SportRing" first_screen_lead="Есть желание заниматься спортом, но нет понимания, что лучше - посмотрите обзор основных направлений, на которых специализируется наш фитнес-центр."%}
+{%include 'parts/inner-page/inner-first-screen.html'%}
+
+<section class="services">
+    <div class="container">
+
+        <div class="services__item">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-6 order-xl-1 order-1">
+                    {%with services_heading='Водные сооружения' services_lead='Самый современный водный комплекс, которых позвоилт вам заниматься не только плаванием, но и также игрой в водной поло. Отдельно обустроены детские дорожки с низкими бортиками, не глубоким дном и спасательным оборудованием.' services_head_number_1=' <span class="services__head-number">3 </span>больших бассейна' services_head_number_2='<span class="services__head-number">1 000<span class="services__head-number--meters">м²</span></span>общая площадь бассейнов' services_head_number_3='<span class="services__head-number">2 </span>детских дорожки ' services_head_number_4='<span class="services__head-number">6 </span>профессиональных тренеров'%}
+                    {%include 'parts/services/services-desc.html'%}
+                    {%endwith%}
+                </div>
+
+                <div class="col-lg-2 order-xl-2 order-3">
+
+                    {%include 'parts/services/services-advantages.html'%}
+
+                </div>
+
+                <div class="col-lg-6 order-xl-3 order-2">
+                    {%with slide__img_1='../../static/img/services/services-1.jpg' slide__img_2='../../static/img/services/services-1-1.jpg' slide__img_3='../../static/img/services/services-1-2.jpg'%}
+                    {%include 'parts/inner-page./slider.html'%}
+                    {%endwith%}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="services__item">
+            <div class="row align-items-center">
+
+                 <div class="col-lg-6 order-xl-1 order-2">
+                    {%with slide__img_1='../../static/img/services/services-2.jpg' slide__img_2='../../static/img/services/services-2-1.jpg' slide__img_3='../../static/img/services/services-2-2.jpg'%}
+                    {%include 'parts/inner-page./slider.html'%}
+                    {%endwith%}
+                </div>
+
+                <div class="col-xl-2 order-xl-2 order-3 ">
+
+                    <ul class="services__advantages">
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-2-1.svg'%}" alt="" class="services__icon">
+                            Профессиональные мастера
+                        </li>
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-2-2.svg'%}" alt="" class="services__icon">
+                            Большой выбор косметологии
+                        </li>
+
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-2-3.svg'%}" alt="" class="services__icon">
+                            Магазин эксклюзивной косметики
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-6 order-xl-3 order-1">
+
+                    <h2 class="services__heading">
+                        Красота
+                    </h2>
+                    <p class="services__lead">
+                        Наши косметологи имеют большой опыт работы(минимальный 10 лет, максимальный 15 лет), который
+                        поможет сделать вас еще красивее, решать проблемы в области косметологии и других важных сфер.
+                    </p>
+                    <ul class="services__numbers">
+
+                        <li class="services__number">
+                            <span class="services__head-number">
+                                13 000
+                            </span>человек посетили косметологическую зону
+
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">33 </span>услуги по косметологии для вас
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">10 </span>посадочных мест в косметологической зоне
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">8 </span>Профессиональных косметологов
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="services__item">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-6 order-xl-1 order-1">
+
+                    <h2 class="services__heading">
+                        Залы для единоборств
+                    </h2>
+                    <p class="services__lead">
+                        Для любителей силовых единоборств мы создали идеальные условия. Отдельные зоны для разминки,
+                        отдыха, тренировки. Залы соответствует требованием профессиональных спорстменов.
+                    </p>
+                    <ul class="services__numbers">
+                        <li class="services__number">
+                            <span class="services__head-number">4 </span>профессиональных тренера
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">
+                                    5
+                            </span>тренировочных зон для профессионалов
+
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">6 </span>человек - тренировочная группа
+                        </li>
+
+                        <li class="services__number">
+                            <span class="services__head-number">8 </span>наивысших наград за тренерский штаб
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-xl-2 order-xl-2 order-3">
+
+                    <ul class="services__advantages">
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-3-1.svg'%}" alt="" class="services__icon">
+                            Профессиональное оборудование
+                        </li>
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-3-2.svg'%}" alt="" class="services__icon">
+                                Наивысшие награды
+                        </li>
+                        <li class="services__advantage">
+                            <img src="{%static 'img/services/advantage-3-3.svg'%}" alt="" class="services__icon">
+                                Несколько зон подготовки
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-6 order-xl-3 order-2">
+                    {%with slide__img_1='../../static/img/services/services-3.jpg' slide__img_2='../../static/img/services/services-3-1.jpg' slide__img_3='../../static/img/services/services-3-2.jpg'%}
+                    {%include 'parts/inner-page./slider.html'%}
+                    {%endwith%}
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{%endwith%}
+{%endblock%}

@@ -1,0 +1,31 @@
+<div class="buy-form__wrapper modal-form__wrapper">
+	<section class="modal-form">
+		 <button aria-label="Закрыть всплывающее окно" class="jsBuyClose modal-form__close">
+			  Закрыть всплывающее окно
+		 </button>
+		 <h2 class="visually-hidden">Заказ абонементов</h2>
+		 <p class="modal-form__heading">
+	Закажите абонемент, заполнив форму. Вам придет абонемент, который не оплачен. Оплата при посещении зала. Не оплаченный абонемент действителен неделю.		 </p>
+		 <form method="post">
+			  {% csrf_token %}
+			  <div class="form__inner-wrapper">
+					<label class="form__label">
+						 Имя*
+						 {{buyform.name}}
+					</label>
+					<label class="form__label">
+						 Телефон*
+						 {{buyform.phone}}
+					</label>
+			  </div>
+			  <label class="form__label form__label-email">
+						 Email*
+						 {{buyform.email}}
+					</label>
+					{{buyform.hidden}}
+			  <div class="form__button-wrapper">
+					<button class="modal-form__button">Заказать абонемент</button>
+			  </div>
+		 </form>
+	</section>
+</div>

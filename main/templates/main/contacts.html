@@ -1,0 +1,48 @@
+{%extends 'main/base.html'%}
+{%block title%}Контакты{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+
+<div class="container">
+    <div class="contacts__wrapper">
+    <div class="row align-items-center">
+
+            <div class="col-lg-4">
+                <section class="contacts">
+                    <ul class="inner-first-screen__breadcrumbs contacts__breadcrumbs">
+                        <li class="inner-first-screen__breadcrumbs-item contacts__breadcrumbs-item">
+                            <a href="{% url 'main-page'%}" class="contacts__first-screen-link inner-first-screen__link">Главная</a>
+                        </li>
+                        <li class="inner-first-screen__breadcrumbs-item contacts__breadcrumbs-item">
+                            Контакты
+                        </li>
+                    </ul>
+                    <h2 class="contacts__heading">Контакты</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <p class="contacts__title">Адрес</p>
+                            <p class="contacts__desc-item">Ленинский пр-т. 173, Воронеж, Воронежская обл., Россия,
+                                394029</p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__title">Абонементный отдел</p>
+                            <p class="contacts__desc-item">+7 (473) 257-46-06</p>
+                            <p class="contacts__more-info-item">abon@sportring.ru</p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__title">Фитнес-клуб на Ленинской</p>
+                            <p class="contacts__desc-item">+7 (473) 257-46-06</p>
+                            <p class="contacts__more-info-item">abon@sportring.ru</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-xxl-6 col-lg-7 offset-xxl-2 offset-lg-1">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac39cd8872f7eb802f688e2cf9947ee4cf48458948544120af9884c9837e8c49c&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

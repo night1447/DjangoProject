@@ -1,0 +1,23 @@
+{%load static%}
+<section class="inner-first-screen">
+    <img src="{{img_first_screen}}" alt="" class="inner-first-screen__image">
+    <div class="inner-first-screen__inner-wrapper">
+
+        <ul class="inner-first-screen__breadcrumbs">
+            <li class="inner-first-screen__breadcrumbs-item">
+                <a href="{% url 'main-page'%}" class="inner-first-screen__link">Главная</a>
+            </li>
+            <li class="inner-first-screen__breadcrumbs-item">
+                {{breadcrumbs_item}}
+            </li>
+
+        </ul>
+        <h1 class="inner-first-screen__heading">
+            {{first_screen_heading}}
+        </h1>
+
+        <p class="inner-first-screen__lead">
+           {{first_screen_lead}}
+        </p>
+    </div>
+</section>

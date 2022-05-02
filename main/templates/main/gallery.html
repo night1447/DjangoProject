@@ -1,0 +1,74 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Галерея{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+
+{%with img_first_screen="../../static/img/src/inner-first-screen.jpg"  breadcrumbs_item="Галерея" first_screen_heading="Фитнес-клуб sportring" first_screen_lead="Наш клуб является одним из самых молодых в Воронеже, но всего за пару лет мы преодолели отметку в 100 000 посетителей в год. Станьте членом нашей фитнес-семьи."%}
+{%include 'parts/inner-page/inner-first-screen.html'%}
+{%endwith%}
+<div class="gallery">
+
+    <div class="container">
+
+        <div class="gallery__item">
+            <div class="row ">
+
+                <div class="col-lg-5">
+                    {%with gallery__heading='Зал функциональной подготовки' gallery__lead='Для любителей кардио-тренировок мы организовали целых 6 тренировочных зон. Среди них есть велотренажерная, беговая, зона step-тренировок и другие. Выбирайте, что нравится, или составляйте микс из тренировок.' %}
+                    {%include 'parts/gallery/gallery-desc.html'%}
+                    {%endwith%}
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    {%with slide__img_1='../../static/img/gallery/gallery-1.jpg' slide__img_2='../../static/img/gallery/gallery-1-1.jpg' slide__img_3='../../static/img/gallery/gallery-1-2.jpg'%}
+                    {%include 'parts/inner-page/slider.html'%}
+                    {%endwith%}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="gallery__item">
+            <div class="row">
+
+                <div class="order-lg-0 order-1 col-lg-6 offset-lg-0 ">
+                    {%with slide__img_1='../../static/img/gallery/gallery-2.jpg' slide__img_2='../../static/img/gallery/gallery-2-1.jpg' slide__img_3='../../static/img/gallery/gallery-2-2.jpg'%}
+                    {%include 'parts/inner-page/slider.html'%}
+                    {%endwith%}
+                </div>
+
+                <div class="order-lg-1 order-0 col-lg-5 offset-lg-1 offset-0">
+                     {%with gallery__heading='Бассейн для водного пола' gallery__lead='Самый современный водный комплекс, который позволит вам заниматься не только плаванием, но также игрой в водное поло. Отдельно обустроены детские дорожки с низкими бортиками, не глубоким дном и спасательным обородуванием.' %}
+                    {%include 'parts/gallery/gallery-desc.html'%}
+                    {%endwith%}
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="gallery__item">
+            <div class="row">
+
+                <div class="col-lg-5">
+                    {%with gallery__heading='Зал физической подготовки' gallery__lead='Для любителей силовых единоборств мы создали практически идеальные условия. Отдельные зоны для разминки, отдыха, тренировки. Зона функциональной подготовки соответствует требованием профессиональных спорстменов.' %}
+                    {%include 'parts/gallery/gallery-desc.html'%}
+                    {%endwith%}
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    {%with slide__img_1='../../static/img/gallery/gallery-3.jpg' slide__img_2='../../static/img/gallery/gallery-3-1.jpg' slide__img_3='../../static/img/gallery/gallery-3-2.jpg'%}
+                    {%include 'parts/inner-page/slider.html'%}
+                    {%endwith%}
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+{%endblock%}

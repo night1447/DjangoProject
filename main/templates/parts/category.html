@@ -1,0 +1,67 @@
+<div class="container">
+
+
+<section class="category" id="water">
+
+    <h2 class="category__heading">
+    {{category_heading_1}}
+    </h2>
+
+    <ul class="category__list">
+            {% with category_img="../../static/img/categories/category.jpg" category_subheading="Бассейн для водного поло" category_item1="Глубина бассейна 1.85 метра" category_item2="Имеются профессиональные мячи и шапки с ушными протекторами" category_item3="Есть вся необходимая разметка для игры"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-1.jpg" category_subheading="Малый бассейн для занятий" category_item1="Глубина бассейна 1.20 метра" category_item2="Глубина детского бассейна 60 см." category_item3="Все действия под контролем хорошо подготовленных тренеров"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-2.jpg" category_subheading="Большой бассейн для плавания" category_item1="Площадь 100 на 100 метров, Глубина 1.85 метра" category_item2="Самая современная очистка бассейна" category_item3="Тренера, которые всегда готовы помочь"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+    </ul>
+
+</section>
+
+
+<section class="category" id="beautiful">
+
+    <h2 class="category__heading">
+    {{category_heading_2}}
+    </h2>
+
+    <ul class="category__list">
+            {% with category_img="../../static/img/categories/category-3.jpg" category_subheading="Зал для йоги" category_item1="Панорамные окна, дающие ощущение легкости" category_item2="Приятное ногам покрытие, теплый пол" category_item3="Широкий инвентарь, погружающий в атмосферу"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-4.jpg" category_subheading="Зал для пилатеса" category_item1="Приятная и доброжелательная атмосфера" category_item2="Позволят вам полностью расслабиться" category_item3="Общими усилиями добьемся хорошего результата"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-5.jpg" category_subheading="Салон красоты" category_item1="Оригинальная продукция" category_item2="Имеется фотозона с нашими профессиональными фотографами" category_item3="Подбираем индивидуальный уход за телом"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+    </ul>
+
+</section>
+
+
+<section class="category" id="combat">
+
+    <h2 class="category__heading">
+    {{category_heading_3}}
+    </h2>
+
+    <ul class="category__list">
+            {% with category_img="../../static/img/categories/category-6.jpg" category_subheading="Вольная борьба" category_item1="Формирование групп зависит от вашего уровня подготовки" category_item2="Большой зал площадью 50 на 50 метров" category_item3="Отдельная комнаты для душа, раздевалки"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-7.jpg" category_subheading="Самбо" category_item1="Тренера - мастера спорта по самбо" category_item2="Индивидуальная подготовка для каждого пришедшего" category_item3="Активное участие в соревнованиях"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+        {% with category_img="../../static/img/categories/category-8.jpg" category_subheading="Дзюдо" category_item1="Тренируются разные возрастные группы" category_item2="Большое количество наград за выступления" category_item3="Тренера высшего пилатажа"%}
+                {%include 'parts/category-item.html'%}
+            {%endwith%}
+    </ul>
+
+</section>
+
+
+</div>

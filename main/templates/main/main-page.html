@@ -1,0 +1,19 @@
+{%extends 'main/base.html'%}
+{%block title%}Фитнес-клуб SportRing{%endblock%}
+{%load static%}
+{%block content%}
+{%include 'parts/modal-form.html'%}
+
+{%include 'parts/main-header.html'%}
+{%include 'parts/left-bar.html'%}
+
+{%include 'parts/first-screen.html'%}
+
+{%include 'parts/about.html'%}
+
+{%with category_heading_1="Водные сооружения" category_heading_2="Красота" category_heading_3="Единоборства"%}
+{%include 'parts/category.html'%}
+{%endwith%}
+
+{%include 'parts/videos.html'%}
+{%endblock%}

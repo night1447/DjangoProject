@@ -1,0 +1,49 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Тренеры{%endblock%}
+{%block content%}
+{%include 'parts/inner-page/inner-main-header.html'%}
+{%with img_first_screen="../../static/img/src/inner-first-screen.jpg"  breadcrumbs_item="Тренеры" first_screen_heading="Тренеры SportRing" first_screen_lead="Наш главный актив - это профессиональные тренеры, которые максимально точно подберут для вас программу обучения с учетом вышего графика, а также физической готовоности."%}
+{%include 'parts/inner-page/inner-first-screen.html'%}
+{%endwith%}
+<div class="container">
+
+<section class="trainers">
+    <div class="trainers__item">
+        <h2 class="category__heading">
+        Тренеры по водным видам спорта
+    </h2>
+        <ul class="category__list">
+            {% with category_img="../../static/img/trainers/trainer-1.jpg" category_subheading="Красильников Мирослав Проклович" category_item1="Тренерский опыт 13 лет" category_item2="Кандидат медицинских наук" category_item3="Чемпион Петербурга по легкой атлетике"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+            {% with category_img="../../static/img/trainers/trainer-2.jpg" category_subheading="Ларионова Виоланта Артёмовна" category_item1="Тренерский опыт 6 лет" category_item2="Специализируется на корректировки фигуры" category_item3="Сбалансирует ваше питания"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+            {% with category_img="../../static/img/trainers/trainer-3.jpg" category_subheading="Данилов Осип Леонидович" category_item1="Тренерский опыт 10 лет" category_item2="Мастер спорта Республики Беларусь по плаванию" category_item3="Судья международной категории по пауэрлифтингу"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+        </ul>
+    </div>
+
+    <div class="trainers__item">
+        <h2 class="category__heading">
+            Тренеры по физической подготовке
+        </h2>
+        <ul class="category__list">
+            {% with category_img="../../static/img/trainers/trainer-4.jpg" category_subheading="Горбачёва София Пётровна" category_item1="Тренерский опыт 3 года" category_item2="Специализируется на построении плана питания" category_item3="Мастер Спорта по спортивной аэробике"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+            {% with category_img="../../static/img/trainers/trainer-5.jpg" category_subheading="Третьяков Леонтий Наумович" category_item1="Тренерский опыт 5 лет" category_item2="Специализируется на реабилитации и восстановлении" category_item3="Мастер спорта по легкой атлетики"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+            {% with category_img="../../static/img/trainers/trainer-6.jpg" category_subheading="Дмитриев Евгений Арсеньевич" category_item1="Тренерский опыт 7 лет" category_item2="Специализируется на наборе мышечной массы" category_item3="Подготовка к соревнованиям по пауэрлифтингу, фитнесу и бодибилдингу"%}
+            {%include 'parts/trainers/trainers-item.html'%}
+            {%endwith%}
+        </ul>
+    </div>
+
+</section>
+</div>
+
+{%endblock%}
