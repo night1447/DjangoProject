@@ -1,5 +1,6 @@
-<script src="static/js/script.min.js"></script>
-<script src="static/js/swiper-bundle.min.js"></script>
+{% load static %}
+<script src="{%static 'js/script.min.js'%}"></script>
+<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".firstScreenSwiper", {
@@ -13,11 +14,11 @@
 
 <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".gallerySwiper",{
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+        var swiper = new Swiper(".gallerySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 
